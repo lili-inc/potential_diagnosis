@@ -7,8 +7,8 @@ import (
 )
 
 func GetRouter() *gin.Engine {
-	gin.SetMode(gin.ReleaseMode)
-	router := gin.New()
+	//gin.SetMode(gin.ReleaseMode)
+	router := gin.Default()
 	router.Static("/js", "src/views/js")
 	router.Static("/css", "src/views/css")
 	router.Static("/img", "src/views/img")
