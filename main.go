@@ -6,7 +6,7 @@ import (
 
 func main() {
 	router := src.GetRouter()
-	router.Run(":8080")
+	router.Run()
 }
 
 //func main() {
