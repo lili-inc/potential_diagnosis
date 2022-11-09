@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
 	"lili_style_test/src"
-	"log"
 )
 
 func main() {
