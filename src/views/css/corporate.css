@@ -54,3 +54,10 @@ p {
 .place{
     display: none;
 }
+
+@media screen and (max-width: 1025px) {
+    /* 959px以下に適用されるCSS（タブレット用） */
+    .content {
+        width: 800px;
+    }
+}

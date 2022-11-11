@@ -177,7 +177,7 @@
                                 type: 'radar',
                                 //データの設定
                                 data: {
-                                    labels: ['ビジネススタンス指数', '利他指数', 'キャリアアップ指数', 'メンタリティ指数' , 'コミット指数'],
+                                    labels: ['ビジネススタンス指数', '利他指数　 ', 'キャリアアップ指数', 'メンタリティ指数' , 'コミット指数'],
                                     datasets: [{
                                         label: '市場価値診断',
                                         //グラフのデータ
@@ -229,12 +229,12 @@
                                 type: 'radar',
                                 //データの設定
                                 data: {
-                                    labels: ['リーダーシップ力', '共感力', '思考力', '感性力', 'チームワーク力'],
+                                    labels: ['共感力', '思考力　　 ', 'リーダーシップ力', 'チームワーク力', '感性力　　 ' ],
                                     datasets: [{
                                         label: 'パーソナリティ傾向診断',
                                         //グラフのデータ
-                                        data: [{{.user.Personality.RigorRate}}, {{.user.Personality.AcceptabilityRate
-                                    }}, {{.user.Personality.LogicalityRate}}, {{.user.Personality.FreedomRate}}, {{.user.Personality.CoordinationRate}}],
+                                        data: [ {{.user.Personality.AcceptabilityRate
+                                    }}, {{.user.Personality.LogicalityRate}}, {{.user.Personality.RigorRate}},  {{.user.Personality.CoordinationRate}}, {{.user.Personality.FreedomRate}}],
                             // データライン
                             borderColor: 'red',
                             }],
