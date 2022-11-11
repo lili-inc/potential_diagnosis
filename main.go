@@ -1,9 +1,14 @@
 package main
 
-import "lili_style_test/src"
+import (
+	"lili_style_test/src"
+	"os"
+)
 
 func main() {
 	router := src.GetRouter()
-	router.Run(":8080")
+	port := os.Getenv("PORT")
+	router.Run(":" + port)
+	//router.Run(":8080")
 }
 
