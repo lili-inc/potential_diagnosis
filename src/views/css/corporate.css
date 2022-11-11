@@ -61,3 +61,8 @@ p {
         width: 800px;
     }
 }
+@media screen and (max-width: 481px) {
+    .content {
+        width: 350px;
+    }
+}
