@@ -14,8 +14,6 @@
 <script>
     function diagnosisClick() {
 
-        alert("button clicked");
-
         var dia = document.getElementById('Diagnosis');
         dia.className = 'diagnosisCheck'
         var mem = document.getElementById('Member')
@@ -29,8 +27,6 @@
     }
 
     function memberClick() {
-
-        alert("button clicked");
 
         var dia = document.getElementById('Diagnosis');
         dia.className = 'diagnosis';
@@ -50,7 +46,6 @@
 
     function bDetailViewClick() {
 
-        alert("button clicked");
         var mem = document.getElementById('Member')
         var dResult = document.getElementById('diagnosis-result')
         dResult.className = 'diagnosis-result';
@@ -60,7 +55,6 @@
     }
     function pDetailViewClick() {
 
-        alert("button clicked");
         var mem = document.getElementById('Member')
         var dResult = document.getElementById('diagnosis-result')
         dResult.className = 'diagnosis-result';
@@ -70,7 +64,6 @@
     }
 
     function backListClick() {
-        alert("button clicked");
         var dResult = document.getElementById('diagnosis-result')
         dResult.className = 'diagnosis-resultCheck';
         var bChart = document.getElementById('business')
@@ -184,11 +177,11 @@
                                 type: 'radar',
                                 //データの設定
                                 data: {
-                                    labels: ['キャリアアップ指数', 'ビジネススタンス指数', '利他指数', 'コミット指数', 'メンタリティ指数'],
+                                    labels: ['ビジネススタンス指数', '利他指数', 'キャリアアップ指数', 'メンタリティ指数' , 'コミット指数'],
                                     datasets: [{
                                         label: '市場価値診断',
                                         //グラフのデータ
-                                        data: [{{.user.CarrierUp.Rate}}, {{.user.BusinessStance.Rate}}, {{.user.Altruism.Rate}}, {{.user.Commit.Rate}}, {{.user.Mentality.Rate}}],
+                                        data: [{{.user.BusinessStance.Rate}}, {{.user.Altruism.Rate}}, {{.user.CarrierUp.Rate}}, {{.user.Mentality.Rate}}, {{.user.Commit.Rate}}],
                             // データライン
                             borderColor: 'red',
                             }],
@@ -236,7 +229,7 @@
                                 type: 'radar',
                                 //データの設定
                                 data: {
-                                    labels: ['厳格度', '受容度', '論理度', '自由度', '調和度'],
+                                    labels: ['リーダーシップ力', '共感力', '思考力', '感性力', 'チームワーク力'],
                                     datasets: [{
                                         label: 'パーソナリティ傾向診断',
                                         //グラフのデータ
