@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"net/http"
-
 )
 func GetForm(c *gin.Context) {
-	c.HTML(http.StatusOK, "form.html", nil)
+	fmt.Println("aaa")
+	c.HTML(http.StatusOK, "index.html", nil)
 }
 
 func GetUserLogin(c *gin.Context) {
@@ -17,7 +17,6 @@ func GetUserLogin(c *gin.Context) {
 func PostUserLogin(c *gin.Context) {
 	mail := c.PostForm("mail")
 	user, err := GetUser(mail)
-	fmt.Println(user)
 	if err != nil {
 		c.Redirect(301, "/user/login")
 		return
@@ -36,8 +35,6 @@ func PostCorporateLogin(c *gin.Context) {
 	users, err := GetUserByCorporateID(id,ps)
 	if err != nil {
 		c.Redirect(301, "/corporate/login")
-
-
 		return
 	}
 
